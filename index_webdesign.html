@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfólio | Leticia Evelin</title>
+    <link rel="stylesheet" href="style_wd.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+
+  <body>
+    <div id="home"></div>
+
+    <header>
+      <h1>Leticia Evelin</h1>
+      <p class="subtitulo">Design | Marketing Digital</p>
+    </header>
+
+    <nav class="navbar">
+      <div class="logo">Port<span>fólio</span></div>
+      <button class="menu-toggle" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#sobre">Sobre mim</a></li>
+        <li><a href="index.html#conhecimentos">Conhecimentos</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <section id="projetos" aria-labelledby="titulo-projetos">
+      <h2 id="titulo-projetos">Meus Projetos</h2>
+      <div class="container-projetos">
+        <div class="card-projeto">
+          <img src="icons/foto-serena-wd.png" alt="Preview Projeto 1">
+          <div class="info-projeto">
+            <h3>Projeto Serena</h3>
+            <p>App voltado a saúde mental e bem-estar</p>
+            <a href="https://www.figma.com/proto/gCBl9o248nUouhwt9BcAGX/ProjetoFinalAlo?node-id=0-1&t=cNl94iTbPxFQIfkO-1" target="_blank">
+              <button class="btn-ver-projeto">Ver Projeto</button>
+            </a>
+          </div>
+        </div>
+        <div class="card-projeto">
+          <img src="icons/foto-livro.png" alt="Preview Projeto 2">
+          <div class="info-projeto">
+            <h3>Clube do Livro</h3>
+            <p>Opções variadas de livros para leitura e grupos interativos</p>
+            <a href="https://www.figma.com/proto/PfaoNk5CLEEsLQuRHO5K79/Clube-do-Livro?node-id=0-1&t=pu8wlmDETjGvxmWz-1" target="_blank">
+              <button class="btn-ver-projeto">Ver Projeto</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const links = document.querySelector('.nav-links');
+      toggle.addEventListener('click', () => {
+        links.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>

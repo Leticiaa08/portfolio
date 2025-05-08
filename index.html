@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfólio | Leticia Evelin</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+
+  <body>
+    <div id="home"></div>
+
+    <header>
+      <h1>Leticia Evelin</h1>
+      <p class="subtitulo">Design | Marketing Digital</p>
+    </header>
+
+    <nav class="navbar">
+      <div class="logo">Port<span>fólio</span></div>
+      <button class="menu-toggle" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#conhecimentos">Conhecimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <section id="sobre" class="text-sobre" aria-labelledby="titulo-sobre">
+      <h2 id="titulo-sobre" class="titulo-direita com-linha" style="margin-right: 4rem;">Sobre Mim</h2>
+      <div class="container">
+        <div class="foto-container">
+          <img src="icons/foto-leticia.jpeg" alt="Leticia Evelin sorrindo" aria-describedby="descricao-sobre">
+        </div>
+        <p id="descricao-sobre">
+          Meu nome é Leticia Evelin, tenho 17 anos e sou estudante de Técnico em Informática. Desde cedo, desenvolvi uma forte paixão por design e marketing digital, áreas que, para mim, são inseparáveis no mundo digital moderno. Ao longo do meu curso, tive a oportunidade de expandir e aprimorar minhas habilidades em ferramentas essenciais como <b>Figma, Canva e Photoshop</b>, visto que são vitais nas estratégias de comunicação com o consumidor. 
+          <br><br>
+          Minha abordagem é centrada no entendimento das necessidades do público e na criação de soluções que não apenas atendem a esses requisitos, mas também proporcionam uma experiência visual agradável e funcional. Acredito que um bom design deve ser intuitivo, esteticamente agradável e, acima de tudo, eficaz na transmissão da mensagem desejada.
+        </p>
+      </div>
+    </section>
+
+   
+    <section id="conhecimentos" class="conhecimentos-div" aria-labelledby="titulo-conhecimentos">
+      <h2 id="titulo-conhecimentos" class="titulo-conhecimentos">Conhecimentos</h2>
+      <div class="container">
+        
+        <a href="https://drive.google.com/drive/folders/1YCYiN3_df8r-IUlXyTBOkLyDG_-QZTcC?usp=sharing" class="link-quadrado">
+          <div class="quadrado efeito" aria-labelledby="conhecimentos-1">
+            <h3 id="conhecimentos-1">Design Gráfico</h3>
+            <p>Identidades visuais que deixam marcas inesquecíveis.</p>
+          </div>
+        </a>
+    
+        <a href="index_mkt.html" class="link-quadrado">
+          <div class="quadrado efeito" aria-labelledby="conhecimentos-2">
+            <h3 id="conhecimentos-2">Marketing Digital</h3>
+            <p>Estratégias que convertem cliques em resultados.</p>
+          </div>
+        </a>
+    
+        <a href="index_webdesign.html" class="link-quadrado">
+          <div class="quadrado efeito" aria-labelledby="conhecimentos-3">
+            <h3 id="conhecimentos-3">Web Design</h3>
+            <p>Conteúdos criativos que geram engajamento real.</p>
+          </div>
+        </a>
+    
+      </div>
+    </section>
+    
+
+    <section id="contato" aria-labelledby="titulo-contato">
+      <h2 id="titulo-contato" class="titulo-centro com-linha">Entre em Contato</h2>
+      <div class="container-info">
+        <a href="https://wa.me/5585994355189" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&to=leticiaevelin427@gmail.com" target="_blank" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/leticia-evelin-889696360/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Leticia Evelin</p>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const links = document.querySelector('.nav-links');
+      toggle.addEventListener('click', () => {
+        links.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
